@@ -46,11 +46,11 @@ xlabel(sprintf('Noise level: %2d%%',sigma*100),'fontsize',14);
 clear opts
 opts.mu = 2^13;
 opts.beta = 2^9;
-opts.mu0 = 2^4;      % trigger continuation shceme
+opts.mu0 = 2^3;      % trigger continuation shceme
 opts.beta0 = 2^0;    % trigger continuation scheme
 opts.tol_inn = 1e-4;
 opts.tol = 1e-5;
-opts.maxit = 300;
+opts.maxit = 3000;
 opts.TVnorm = 1;
 opts.nonneg = true;
 %opts.disp = true;
